@@ -4,13 +4,20 @@
 
 package com.mycompany.Biblioteca;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  *
  * @author elkin jimenez
  */
 public class Main {
-
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
+    
+    static ArrayList<Customer> customer = new ArraayList<>();
+    static Scanner sc = new Scanner(System.in);
+    
+    public void crearCliente(int id, String nombre, String telefono, String correo) {
+    Cliente nuevoCliente = new Cliente(id, nombre, telefono, correo);
+    listaClientes.add(nuevoCliente);
+   }
 }
